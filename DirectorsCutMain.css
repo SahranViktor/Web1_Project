@@ -1,0 +1,151 @@
+body {
+    background-color: #3B3B3B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+/*GRID CONTAINER */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(65, 1fr);
+    gap: 20px;
+    height: 400vh;
+     width: 100%;
+}
+
+.parent div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*prevents overflow  of page - scrolling left and right  basically*/
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+/*HEADER/NAV */
+#div1 {
+    background-color: #781e7b;
+    border: 3px solid black;
+    color: white;
+    grid-column: 1/41;
+    grid-row: 1/5;
+}
+
+#div2, #div4, #div5 {
+    color: white;
+    grid-row: 2/4;
+    font-family: inherit;
+}
+
+#div2 { grid-column: 10/14; }
+#div4 { grid-column: 14/18; }
+#div5 { grid-column: 18/22; }
+
+
+
+
+/* LOGO */
+#div6 {
+    background-image: url(Images/image-upscaled.jpeg);
+    background-size: cover;   
+    grid-column: 24/40; 
+    grid-row: 1/5;
+    width: 70%;
+    height: 70%;
+    margin: 30px
+}
+
+
+
+
+
+
+/*  IMAGE CARDS  */
+#div7, #div8, #div9, #div10, #div11,#div12, #div13, #div14, #div15, #div16,#div17, #div18, #div19, #div20, #div21,
+#div22, #div23, #div24, #div25, #div26, #div17, #div18, #div19, #div20, #div21,#div22, #div23, #div24, #div25, #div26
+ {
+    border: 3px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;             /* Some divs dont hover for some reason, adding those code fixes that somehow*/
+    transition: all 0.3s ease;
+}
+
+/*  Images for the divs/cards */
+#div7 { background-image: url(Images/alien.jpg);}
+#div8 { background-image: url(Images/civilwar.jpg); }
+#div9 { background-image: url(Images/dune.jpg); }
+#div10 { background-image: url(Images/wildrobot.jpg);  }
+#div11 { background-image: url(Images/madmax.jpg); 
+width: 275px;;}
+#div12 { background-image: url(Images/arcane.jpg); 
+width: 275px;}
+#div13 { background-image: url(Shogun_Poster_1.webp); 
+width: 265px; }
+#div14 { background-image: url(Images/penguin.jpg); }
+#div15 { background-image: url(Images/frieren.jpg); }
+#div16 { background-image: url(Images/xmen97.jpg); }
+#div17 { background-image: url(Images/mickey17.jpg); 
+width: 270px;}  
+#div18 { background-image: url(Images/f1.jpg); }
+#div19 { background-image: url(Images/sinners.jpg); }
+#div20 { background-image: url(Images/superman.jpg); }
+#div21 { background-image: url(Images/avatar3.webp); }
+#div22 { background-image: url(Images/bear.jpg); }
+#div23 { background-image: url(Images/tlou.jpg);  }
+#div24 { background-image: url(Images/severance.jfif); }
+#div25 { background-image: url(Images/daredevil.jpg);  }
+#div26 { background-image: url(Images/opm.jpeg); }
+
+
+/* HOVER EFFECTS  */
+#div7:hover, #div8:hover, #div9:hover, #div10:hover, #div11:hover,
+#div12:hover, #div13:hover, #div14:hover, #div15:hover, #div16:hover,
+#div17:hover, #div18:hover, #div19:hover, #div20:hover, #div21:hover,
+#div22:hover, #div23:hover, #div24:hover, #div25:hover, #div26:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* CONTENT SECTIONS */
+#div27 { color: white; grid-column: 17/26; grid-row: 3/15; font-size: x-large; font-family: inherit; }
+#div28 { color: white; grid-column: 17/26; grid-row: 18/30;font-size: x-large; font-family: inherit; }
+#div29 { color: white; grid-column: 13/30; grid-row: 33/45; font-size: x-large; font-family: inherit; }
+#div30 { color: white; grid-column: 8/35; grid-row: 47/60; font-size: x-large; font-family: inherit; }
+
+/* LINK STYLES */
+a[href="Alien.html"] { grid-column: 9/14; grid-row: 10/40; width: 270px; height: 400px; display: block; }
+a[href="CivilWar.html"] { grid-column: 14/19; grid-row: 10/40; width: 260px; height: 400px; display: block;}
+a[href="Dune.html"] { grid-column: 19/24; grid-row: 10/40; width: 260px; height: 400px; display: block;}
+a[href="WildRobot.html"] { grid-column: 24/29; grid-row: 10/40; width: 260px; height: 400px; display: block;}
+a[href="MadMax.html"] { grid-column: 29/34; grid-row: 10/40; width: 260px; height: 400px; display: block;}
+a[href="Arcane.html"] { grid-column: 9/14; grid-row: 25/40; width: 260px; height: 400px; display: block; }
+a[href="Shogun.html"] { grid-column: 14/19; grid-row: 25/40; width: 260px; height: 400px; display: block; }
+a[href="Penguin.html"] { grid-column: 19/24; grid-row: 25/40; width: 260px; height: 400px; display: block; }
+a[href="Frieren.html"] { grid-column: 24/29; grid-row: 25/40; width: 260px; height: 400px; display: block; }
+a[href="Xmen.html"] { grid-column: 29/34; grid-row: 25/40; width: 260px; height: 400px; display: block; }
+a[href="Mickey17.html"] { grid-column: 9/14; grid-row: 40/50; width: 260px; height: 400px; display: block; }
+a[href="F1.html"] { grid-column: 14/19; grid-row: 40/50; width: 260px; height: 400px; display: block; }
+a[href="Sinners.html"] { grid-column: 19/24; grid-row: 40/50; width: 260px; height: 400px; display: block; }
+a[href="Superman.html"] { grid-column: 24/29; grid-row: 40/50; width: 260px; height: 400px; display: block; }
+a[href="Avatar.html"] { grid-column: 29/34; grid-row: 40/50; width: 260px; height: 400px; display: block; }
+a[href="Bear.html"] { grid-column: 9/14; grid-row: 55/60; width: 260px; height: 400px; display: block; }
+a[href="TLOU.html"] { grid-column: 14/19; grid-row: 55/60; width: 260px; height: 400px; display: block; }
+a[href="Severance.html"] { grid-column: 19/24; grid-row: 55/60; width: 260px; height: 400px; display: block; }
+a[href="Daredevil.html"] { grid-column: 24/29; grid-row: 55/60; width: 260px; height: 400px; display: block; }
+a[href="opm.html"] { grid-column: 29/34; grid-row : 55/60   ; width: 260px; height:400px; display: block; }
